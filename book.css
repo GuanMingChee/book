@@ -38,3 +38,19 @@ caption {
 .column-border {
   border: 2px solid black;
 }
+
+nav {
+  background-color:coral;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+button {
+  margin:2%;
+}
+
+div {
+  display:flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+}
