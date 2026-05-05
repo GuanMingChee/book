@@ -8,6 +8,35 @@
   <title>Book</title>
 </head>
 <body>
-  <nav><button>Homepage</button><a href="addBook.html"><button id="add-book">New Book</button></a><a href="deleteBook.html"><button id="delete-book">Delete Book</button></a></nav>
+  <nav>Welcome to My Library<button id="single-page-add">Add Book</button></nav>
+  <div id="display-div">
+  <div><table>
+    <caption>Library Record</caption>
+    <thead>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Page/s</th>
+      <th>Read Status</th>
+      <th>Buttons</th>
+    </thead>
+    <tbody id="display-book-record">
+    </tbody>
+  </table></div>
+  <div id="pop-up-add-div" class="hidden"><form action="" id="formtable">
+        <caption>Add New Book</caption>
+        <br>
+        <input type="text" placeholder="title" id="title">
+        <br>
+        <input type="text" placeholder="author" id="author">
+        <br>
+        <input type="number" placeholder="page" id="page">
+        <br>
+        <button type="submit">Submit</button>
+        <button id="close-pop-up">Cancel</button>
+        <div id="displayMsg"></div>
+    </form>
+    </div>
+  </div>
 </body>
 </html>

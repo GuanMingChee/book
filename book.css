@@ -13,6 +13,7 @@ td,
 th {
   border: 1px solid rgb(190 190 190);
   padding: 10px 20px;
+  font-size: medium;
 }
 
 th {
@@ -33,6 +34,7 @@ tr:nth-child(odd) td {
 
 caption {
   padding: 10px;
+  font-size: 2rem;
 }
 
 .column-border {
@@ -40,17 +42,49 @@ caption {
 }
 
 nav {
-  background-color:coral;
+  display: flex;
+  background-color: coral;
   justify-content: space-between;
-  padding: 1%;
+  padding: 1rem;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
 }
 
 button {
-  margin:2%;
+  margin: 2%;
 }
 
 div {
-  display:flex;
+  display: grid;
   justify-content: center; /* Horizontal centering */
   align-items: center;
+}
+
+#formtable {
+  background: white;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#pop-up-add-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width:100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0,0,0,0.7);
+  padding: 20px;
+  border: 2px solid black;
+  z-index: 1000; /* Ensures it sits on top of the table */
+}
+
+#single-page-add {
+  margin-left: auto;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: larger;
 }
